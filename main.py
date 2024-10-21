@@ -1,5 +1,5 @@
 from projeto.services.usuario_service import UsuarioService
-from repositories.usuario_repository import UsuarioRepository
+from projeto.repositories.usuario_repository import UsuarioRepository
 from projeto.config.connection import Session 
 
 def main(): 
