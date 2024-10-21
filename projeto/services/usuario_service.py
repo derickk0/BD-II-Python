@@ -1,5 +1,5 @@
 from projeto.models.usuario import Usuario
-from repositories.usuario_repository import UsuarioRepository
+from projeto.repositories.usuario_repository import UsuarioRepository
 
 class UsuarioService: 
     def __init__(self, repository: UsuarioRepository) -> None:
@@ -15,5 +15,5 @@ class UsuarioService:
         except Exception as erro: 
             print(f"Ocorreu um erro inesperado: {erro}")
 
-    def listar_todos_usuario(self):    
-        return self.repository.listar_todos_usuario()
+    def listar_todos_usuarios(self):    
+        return self.repository.listar_todos_usuarios()
